@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+        <title>Chat</title>
+    </head>
+    <body>
+        <form id="form">
+            <textarea id="message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+        <hr>
+        <div id="channels">
+            {% for channel in channels %}
+                
+            {% endfor %}
+        </div>
+        <div id="messages">
+        </div>
+    </body>
+</html>
